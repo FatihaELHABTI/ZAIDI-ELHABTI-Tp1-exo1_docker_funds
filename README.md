@@ -8,61 +8,61 @@ Prise en main des commandes Docker de base : téléchargement d'images, exécuti
 ## 🧪 Étapes réalisées
 
 1. **Vérifier l'installation Docker**
-   ```bash
+```bash
 docker --version
 docker info
-   ```
+```
 
 2. **Exécuter le conteneur `hello-world`**
-   ```bash
+```bash
 docker run --rm hello-world
-   ```
+```
 
 3. **Télécharger l'image `nginx:alpine` sans la lancer**
-   ```bash
+```bash
 docker pull nginx:alpine
-   ```
+```
 
 4. **Lister les images présentes**
-   ```bash
+```bash
 docker images
-   ```
+```
 
 5. **Lancer nginx en arrière-plan sur port 8080**
-   ```bash
+```bash
 docker run -d --name mon-nginx -p 8080:80 nginx:alpine
-   ```
+```
 
 6. **Accéder au serveur nginx dans le navigateur**
-   ```text
+```
 http://localhost:8080
-   ```
+```
 
 7. **Afficher les logs du conteneur nginx**
-   ```bash
+```bash
 docker logs mon-nginx
 # ou en temps réel
 docker logs -f mon-nginx
-   ```
+```
 
 8. **Lister tous les conteneurs (actifs et stoppés)**
-   ```bash
+```bash
 docker ps -a
-   ```
+```
 
 9. **Arrêter puis supprimer le conteneur nginx**
-   ```bash
+```bash
 docker stop mon-nginx
 docker rm mon-nginx
-   ```
+```
 
 10. **Nettoyer les images inutilisées**
-   ```bash
+```bash
 # Supprimer uniquement les images non référencées
 docker image prune
 # Supprimer toutes les images inutilisées (risqué)
 docker image prune -a
-   ```
+```
 
 ---
 
@@ -82,8 +82,6 @@ Un **conteneur** est une *instance en exécution* dérivée d'une image.
 docker-exo1/
 ├── README.md
 ├── captures_realisation_tp/
-
 ```
 
 ---
-
