@@ -87,9 +87,3 @@ docker-exo1/
 
 ---
 
-## ✅ Auteur
-Nom : *(à compléter)*  —  Date : *(à compléter)*
-
----
-
-Ce README sert de guide de reproduction et d'accompagnement au rapport LaTeX.
